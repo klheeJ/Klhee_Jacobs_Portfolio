@@ -112,11 +112,52 @@
   }
 
   @media only screen and (max-width: 750px) { 
-    #About-main {
+    .About-section {
         width: 100%;
-    }
-    body, html {
-        width: 100%;
-        max-width: 100%;
-    }
-  }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-top: 3rem;
+        }
+        .About-desc {
+            width: 100%;
+            margin-top: 3rem;
+            .About-text {
+                padding: 0rem 1rem 3rem 1rem;
+                margin-top: 0rem;
+                font-size: 1rem;
+                line-height: 2.5rem;
+                text-align: justify;
+                margin-left: 0rem;
+            }
+            .About-pic {
+                width: 100%;
+                height: auto;
+                opacity: 0.8;
+                padding-bottom: 2rem;
+                #about-me-pic {
+                width: 80%;
+                height: auto;
+                border-radius: 0;
+                margin-left: 0;
+                }
+            }
+        }
+
+    .tag-list li {
+        max-width: 4rem;
+        max-height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem;
+        background: transparent;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+        img {
+            max-width: 100%;
+        }
+        }
+  };

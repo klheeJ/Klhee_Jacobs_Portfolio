@@ -31,22 +31,32 @@ nav {
 @media only screen and (max-width: 750px) { 
     nav {
         height: 2rem;
+        top: 0;
         position: fixed;
         padding-top: 1rem;
-        width: 100%;
-        max-width: 100%;
+        width: 100vw;
         background-color: white;
         z-index: 2;
         ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
             list-style: none;
             margin: 0;
-            width: 100%;
-            a{
-                text-decoration: none;
-                color: black;
-                font-size: 1rem;
-                transition: font-size 0.2s ease-in-out;
-            }
+            padding: 0;
         }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            transition: font-size 0.2s ease-in-out;
+            &:hover {
+                color: black;
+                font-weight: normal;
+                font-size: 1rem;
+                cursor: pointer;
+           }
+        }
+    
     }
 }

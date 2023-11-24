@@ -62,7 +62,7 @@ const Home = () => {
             and beauty in design.
           </div>
           <div className="About-pic">
-            <img src="../public/Me-Mt.jpeg" alt="" />
+            <img id="about-me-pic" src="../public/Me-Mt.jpeg" alt="" />
           </div>
         </div>
       </div>
