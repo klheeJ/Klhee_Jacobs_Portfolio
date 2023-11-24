@@ -1,0 +1,43 @@
+#resume-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    .resume-title {
+        font-size: 1.5rem;
+    }
+}
+
+.resume {
+    display: grid;
+    width: 85%;
+    height: 16rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    div {
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-device-width: 750px) { 
+    #resume-main {
+        visibility: hidden;
+        display: none;
+    }
+    .resume {
+        display: grid;
+        width: 85%;
+        height: 16rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        div {
+            font-weight: bold;
+        }
+        table {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+ }

@@ -1,0 +1,8 @@
+.footer-section{
+    @include flexJustifyCenter;
+    align-items: center;
+    height: 4rem;
+    border-top:  rgba(0, 0, 0, 0.3) 2px solid;
+}
+
+

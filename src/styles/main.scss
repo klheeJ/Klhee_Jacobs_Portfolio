@@ -1,0 +1,28 @@
+@import '../styles/mixins';
+@import '../components/Navbar.scss';
+@import '../components/Hero.scss';
+@import '../components/Footer.scss';
+@import 'Resume.scss';
+@import 'Projects.scss';
+@import 'Contact.scss';
+@import 'About.scss';
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1;}
+}
+
+@media screen and (max-width: 768px) {
+    body, html {
+        width: 100%;
+        max-width: 100%;
+    }
+  }

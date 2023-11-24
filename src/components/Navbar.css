@@ -1,0 +1,51 @@
+nav {
+  height: 3rem;
+  top: 0;
+  position: fixed;
+  padding-top: 1.5rem;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  transition: font-size 0.2s ease-in-out;
+}
+nav a:hover {
+  color: rgb(240, 187, 112);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    height: 2rem;
+    position: fixed;
+    padding-top: 1rem;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    z-index: 2;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: font-size 0.2s ease-in-out;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
