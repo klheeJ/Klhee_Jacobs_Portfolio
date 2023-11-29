@@ -2,39 +2,45 @@ import { useState } from 'react';
 import { navLinks } from "../constants";
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   const [openNav, setOpenNav] = useState(false)
 
-  const openMenu = (prevValue) => {
-    const previousValue = prevValue;
+  const openMenu = () => {
+    const previousValue = openNav;
     setOpenNav(!previousValue)
     console.log(previousValue)
   }
-  
+   
   return (
-    <nav>
-        <ul>
-            {navLinks.map((nav)=> (
-                <li
-                key={nav.id}>
-                  <Link to={nav.id} smooth={true} offset={-100} duration={500}>{nav.title}
-                  </Link>
-                </li>
-            ))}
-        </ul>
-        <div onClick={openMenu} className='toggle-nav'><FontAwesomeIcon className='bar'  icon={faBars} /></div>
-        <ul className='toggle-menu'>
-            {navLinks.map((nav)=> (
-                <li
-                key={nav.id}>
-                  <Link to={nav.id} smooth={true} offset={-100} duration={500}>{nav.title}
-                  </Link>
-                </li>
-            ))}
-        </ul>
-    </nav>
+    <div>
+      <nav>
+          <ul>
+              {navLinks.map((nav)=> (
+                  <li
+                  key={nav.id}>
+                    <Link to={nav.id} smooth={true} offset={-100} duration={500}>{nav.title}
+                    </Link>
+                  </li>
+              ))}
+          </ul>
+          <div onClick={openMenu} className='toggle-nav'>
+            <FontAwesomeIcon className={`bar ${openNav ? 'hidden': ''}`}  icon={faBars} />
+            <FontAwesomeIcon className={`close ${openNav ? '': 'hidden'}`}  icon={faXmark} />
+          </div>
+      </nav>
+      <ul
+      className={`toggle-menu ${openNav ? 'open': ''}`}>
+        {navLinks.map((nav)=> (
+            <li
+            key={nav.id}>
+              <Link to={nav.id} smooth={true} offset={-100} duration={500}>{nav.title}
+              </Link>
+            </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

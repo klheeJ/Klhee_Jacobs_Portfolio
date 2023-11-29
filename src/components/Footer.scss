@@ -1,8 +1,44 @@
-.footer-section{
-    @include flexJustifyCenter;
+#connect{
     align-items: center;
-    height: 4rem;
-    border-top:  rgba(0, 0, 0, 0.3) 2px solid;
+    .connect-text {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: lighter;
+    }
+    .connect-social { 
+        font-family: 'Inconsolata', monospace;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        a {
+            font-size: 1.5rem;
+        }
+    }
 }
+
+@media only screen and (max-width: 750px) {
+    #connect{
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        .connect-text {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: lighter;
+        }
+        .connect-social { 
+            font-family: 'Inconsolata', monospace;
+            display: flex;
+            flex-direction: column;
+            margin-left: 1.5rem;
+            align-items: center;
+            padding-bottom: 2rem;
+            gap: 1rem;
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
+ }
 
 
