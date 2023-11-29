@@ -21,3 +21,22 @@
         background-size: cover;
     }
 }
+
+@mixin mobile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+@mixin mobile-head {
+    font-size: 2rem;
+    color: rgb(17, 17, 125);
+    margin-left: 0rem;
+    padding-top: 1rem;
+    width: 20rem;
+    text-align: center;
+}

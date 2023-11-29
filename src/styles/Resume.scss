@@ -1,43 +1,64 @@
 #resume-main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    .resume-title {
-        font-size: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    .resume-heading {
+        font-size: 2rem;
+        color: rgb(17, 17, 125);
+        margin-left: 2rem;
+        padding-top: 1rem;
+        width: 20rem;
+        text-align: center;
+    }
+    .resume-exp {
+        padding: 1rem 1rem 3rem 1rem;
+        text-align: justify;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        width: 50rem;
+        height: 100%;
+        #exps {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 
-.resume {
-    display: grid;
-    width: 85%;
-    height: 16rem;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 4rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    div {
-        font-weight: bold;
-    }
-}
+// .resume {
+//     display: grid;
+//     width: 85%;
+//     height: 16rem;
+//     grid-gap: 10px 4rem;
+//     margin-top: 2rem;
+//     margin-bottom: 3rem;
+//     div {
+//         font-weight: bold;
+//     }
+// }
 
 @media only screen and (max-device-width: 750px) { 
     #resume-main {
-        visibility: hidden;
-        display: none;
-    }
-    .resume {
-        display: grid;
-        width: 85%;
-        height: 16rem;
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        div {
-            font-weight: bold;
+        @include mobile-main;
+        .resume-heading {
+            @include mobile-head;
         }
-        table {
-            display: flex;
-            flex-direction: column;
+        .resume-exp {
+            padding: 2rem 1rem 3rem 1rem;
+            text-align: center;
+            font-size: 1rem;
+            line-height: 2.5rem;
+            width: calc(100% - 2rem*2);
+            height: 100%;
+            #exps {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                div:first-child {
+                    font-weight: bold;
+                }
+            }
         }
     }
  }

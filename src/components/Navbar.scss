@@ -2,10 +2,11 @@ nav {
     height: 3rem;
     top: 0;
     position: fixed;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     width: 100%;
     background-color: white;
     z-index: 2;
+    font-family: 'Inconsolata', monospace;
     ul {
         display: flex;
         flex-direction: row;
@@ -14,48 +15,82 @@ nav {
         margin: 0;
     }
     a{
+        letter-spacing: 4px;
         text-decoration: none;
         color: black;
+        position: relative;
         font-size: 1.3rem;
         transition: font-size 0.2s ease-in-out;
         &:hover {
-             color: rgb(240, 187, 112);
-             font-weight: bolder;
-             font-size: 1.5rem;
              cursor: pointer;
         }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0.1rem;
+            left: 0;
+            bottom: 0;
+            background-color: black;
+            transform-origin: left;
+            transition: width 0.2s ease-in-out;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    .toggle-nav { 
+        visibility: hidden;
     }
 
 }
 
 @media only screen and (max-width: 750px) { 
     nav {
-        height: 2rem;
+        height: 3rem;
         top: 0;
-        position: fixed;
-        padding-top: 1rem;
-        width: 100vw;
-        background-color: white;
-        z-index: 2;
+        position:sticky;
+        padding-top: 0rem;
+        width: 100%;
+        z-index: 0;
+        font-family: 'Inconsolata', monospace;
         ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            list-style: none;
-            margin: 0;
-            padding: 0;
+            visibility: hidden;
         }
         a{
+            letter-spacing: 2px;
             text-decoration: none;
             color: black;
-            font-size: 1rem;
+            position: relative;
+            font-size: 0.8rem;
             transition: font-size 0.2s ease-in-out;
             &:hover {
-                color: black;
-                font-weight: normal;
-                font-size: 1rem;
-                cursor: pointer;
-           }
+                 cursor: pointer;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0.1rem;
+                left: 0;
+                bottom: 0;
+                background-color: black;
+                transform-origin: left;
+                transition: width 0.2s ease-in-out;
+            }
+            &:hover::after {
+                width: 100%;
+            }
+        }
+        .toggle-nav {
+            visibility: visible;
+            text-align: end;
+            margin-bottom: 1rem;
+            .bar {
+                padding-right: 2rem;
+                font-size: 2rem;
+            }
         }
     
     }

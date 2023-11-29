@@ -1,19 +1,21 @@
 const Hero = () => {
   return (
   <div className='hero-main-head'>
-    <div className='hero-image'/>
+
+    <div className='hero-image'>
+      <img src="/public/Me-Mt2.jpeg" alt="pic of me on the mts" />
+    </div>
+
     <div className='hero-main'>
       <div className='hero-heading'>
-          <div>Klhee Jacobs</div>
+        Klhee Jacobs
       </div>
       <div className='hero-sub'>
-        <div className='hero-text'>
           Passionate about design and creating empathetic and efficient code
-          Passionate about design and creating empathetic and efficient code
-        </div>
-        <a href="/contact"><button className="connect-button">Let's Connect</button></a>
       </div>
+      <a className="hero-connect" href="/contact"><button className="connect-button">Let's Connect</button></a>
     </div>
+
   </div>
   );
 };

@@ -1,119 +1,108 @@
 .hero-main-head {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 6rem 4rem 4rem 4rem;
-    background-color: rgb(224, 208, 208);
-    .hero-heading {
-        @include flexCenter(column);
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        div:first-child {
-            font-size: 6rem;
-            font-family: 'Merriweather', serif;
-        }
-        div:nth-child(2) {
-            font-size: 2.8rem;
-            font-family: 'Montserrat', serif;
-        }
-    }
-    .hero-sub {
-        @include flexCenter(column);
-        gap: 2em; 
-    .connect-button {
-        background-color: white;
-        width: 12rem;
-        height: 4rem;
-        font-size: 1.5rem;
-        font-family: 'Montserrat', sans-serif;
-        transition: background-color 0.2s ease-in;
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.843);
-            color: white;
-            cursor: pointer;
-        }
-        }
-    }
-}
-.hero-main {
-    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-top: 2rem;
+    margin-top: 2.5rem;
+    padding: 10rem 4rem 3rem 4rem;
+    background-color: rgb(245, 246, 249);
+    .hero-image{
+        background-image: url('/public/Me-Mt2.jpeg');
+        background-repeat: no-repeat;
+        width: 40rem;
+        height: 4rem;
+        img {
+            width: 100%;
+        }
+    }
+    .hero-main {
+        margin-top: 18rem;
+        @include flexCenter(column);
+        .hero-heading{
+        padding-bottom: 2rem;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 3.5rem;
+        }
+        .hero-sub {
+            font-size: 2rem;
+            font-family: 'Inconsolata', monospace;
+            font-weight: lighter;
+            text-align: center;
+            width: 60%;
+        }
+        .hero-connect {
+            margin-top: 2rem;
+            .connect-button {
+                background-color: white;
+                width: 10rem;
+                height: 3rem;
+                border: 1px solid black;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 100%;
+                transition: background-color 200ms ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
-.hero-text{
-    font-size: 1.5rem;
-    width: 80%;
-}
-
-.hero-image{
-    background-image: url('/public/open_peeps_me.png');
-    width: 50%;
-    height: 75vh;
-    background-position: right;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
 
 // MEIDAQUERY///////////////////////////////////////////
 @media only screen and (max-device-width: 750px) { 
     .hero-main-head {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        padding: 1rem 0 0 0;
+        justify-content: center;
+        margin-top: 0rem;
+        padding: 2rem 3rem 3rem 0rem;
         width: 100%;
-        .hero-heading {
-            @include flexCenter(column);
-            padding-top: 0rem;
-            padding-bottom: 1rem;
-            div:first-child {
-                font-size: 2rem;
-                font-weight: bold;
-                padding-bottom: 0.5rem;
-            }
-        }
-        .hero-image {
-            width: 100%;
-            height: 20rem;
-            margin-top: 4rem;
-            background-position: center;
-        }
-        .hero-sub {
-            @include flexCenter(column);
-            padding-bottom: 2rem;
-            gap: 1.5em; 
-            text-shadow: 2px 2px 2px rgb(214, 209, 209);
-        .connect-button {
-            background-color: white;
-            width: 10rem;
+        background-color: white;
+        .hero-image{
+            background-image: url('/public/Me-Mt2.jpeg');
+            background-repeat: no-repeat;
             height: 3rem;
-            font-size: 1rem;
-            font-family: 'Montserrat', sans-serif;
-            box-shadow: 2px 2px 2px grey;
-            transition: background-color 0.2s ease-in;
-            border-radius: 3px;
-            &:hover {
-                background-color: rgb(235, 183, 73);
-                color: white;
-                cursor: pointer;
+            img {
+                width: 100%;
             }
+        }
+        .hero-main {
+            margin-top: 18rem;
+            width: 100%;
+            @include flexCenter(column);
+            .hero-heading{
+            padding-bottom: 1rem;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 2rem;
+            }
+            .hero-sub {
+                font-size: 1.6rem;
+                font-family: 'Inconsolata', monospace;
+                font-weight: lighter;
+                width: 95%;
+            }
+            .hero-connect {
+                margin-top: 2rem;
+                .connect-button {
+                    background-color: white;
+                    width: 10rem;
+                    height: 3rem;
+                    border: 1px solid black;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: 100%;
+                    transition: background-color 200ms ease-in-out;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: black;
+                        color: white;
+                    }
+                }
             }
         }
     }
 
-    .hero-main {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 2rem;
-    }
-
-    .hero-text{
-        font-size: 1.2rem;
-        width: 80%;
-        text-align: center;
-    }
 }
