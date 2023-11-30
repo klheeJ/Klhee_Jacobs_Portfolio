@@ -48,54 +48,36 @@
     @include project-styles;
     background-image: url('../../public/scholarshipauditions.png');
     width: 80%;
-    &:hover{
-        background-image: url('../../public/scholarshipauditions2.png');
-    }
 }
 
 .hello2 {
     @include project-styles;
     background-image: url('../../public/CAPI.png');
     width: 80%;
-    &:hover{
-        background-image: url('../../public/CAPI2.png');
-    }
 }
 
 .hello3 {
     @include project-styles;
     background-image: url('../../public/Foodbar.png');
     width: 80%;
-    &:hover{
-        background-image: url('../../public/Foodbar2.png');
-    }
 }
 
 .hello4 {
     @include project-styles;
     background-image: url('../../public/Otter.png');
     width: 80%;
-    &:hover{
-        background-image: url('../../public/Otter2.png');
-    }
 }
 
 .hello5 {
     @include project-styles;
     background-image: url('../../public/mymusicfuture.png');
     width: 80%;
-    &:hover{
-        background-image: url('../../public/mymusicfuture2.png');
-    }
 }
 
 .hello6 {
     @include project-styles;
     background-image: url('../../public/musiccitybowlband.png');
     width: 80%;
-    &:hover{
-        background-image: url('../../public/musiccitybowlband2.png');
-    }
 }
 
 @media only screen and (max-width: 750px) { 

@@ -78,6 +78,7 @@ const Home = () => {
       </div>
     </div>
   </section>
+  <div className="resume-link"><a href="https://drive.google.com/file/d/1JFG36v0GkqtCNXqzkidR88m3wndT_waf/view?usp=sharing" target="blank">download the complete resume</a></div>
 
 
 {/* //////PROJECTS//////////// */}

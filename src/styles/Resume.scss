@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 0rem;
     .resume-heading {
         font-size: 2rem;
         color: rgb(17, 17, 125);
@@ -26,17 +26,16 @@
     }
 }
 
-// .resume {
-//     display: grid;
-//     width: 85%;
-//     height: 16rem;
-//     grid-gap: 10px 4rem;
-//     margin-top: 2rem;
-//     margin-bottom: 3rem;
-//     div {
-//         font-weight: bold;
-//     }
-// }
+.resume-link {
+    align-self: center;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+    font-style: italic;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
 
 @media only screen and (max-width: 750px) { 
     #resume-main {
@@ -59,6 +58,18 @@
                     font-weight: bold;
                 }
             }
+        }
+    }
+
+    .resume-link {
+        align-self: center;
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 1rem;
+        margin-bottom: 5rem;
+        &:hover {
+            font-weight: bold;
         }
     }
  }

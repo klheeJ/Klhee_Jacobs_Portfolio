@@ -12,6 +12,13 @@ function Navbar() {
     setOpenNav(!previousValue)
     console.log(previousValue)
   }
+
+  const largeScreenOffset = -100;
+  const smallScreenOffsent = -35;
+
+  const getOffset = () => {
+    return window.innerWidth >= 750? largeScreenOffset : smallScreenOffsent
+  }
    
   return (
     <div>
@@ -35,7 +42,7 @@ function Navbar() {
         {navLinks.map((nav)=> (
             <li
             key={nav.id}>
-              <Link to={nav.id} smooth={true} offset={-100} duration={500}>{nav.title}
+              <Link to={nav.id} onClick={openMenu} smooth={true} offset={getOffset()} duration={500}>{nav.title}
               </Link>
             </li>
         ))}
