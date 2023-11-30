@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   const largeScreenOffset = -100;
-  const smallScreenOffsent = -42;
+  const smallScreenOffsent = -50;
 
   const getOffset = () => {
     return window.innerWidth >= 750? largeScreenOffset : smallScreenOffsent
