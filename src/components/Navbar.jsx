@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   const largeScreenOffset = -100;
-  const smallScreenOffsent = -50;
+  const smallScreenOffsent = -250;
 
   const getOffset = () => {
     return window.innerWidth >= 750? largeScreenOffset : smallScreenOffsent
@@ -27,7 +27,7 @@ function Navbar() {
               {navLinks.map((nav)=> (
                   <li
                   key={nav.id}>
-                    <Link to={nav.id} smooth={true} offset={-100} duration={500}>{nav.title}
+                    <Link to={nav.id} smooth={true} offset={getOffset} duration={500}>{nav.title}
                     </Link>
                   </li>
               ))}

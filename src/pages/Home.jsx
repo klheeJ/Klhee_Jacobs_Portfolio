@@ -1,47 +1,18 @@
-import { certifications } from "../constants"
+import AOS from "aos";
+import 'aos/dist/aos.css'
 import { Hero, Footer } from "../components"
-import { useEffect, useState } from 'react'
+import { useEffect } from "react";
 
 const Home = () => {
-  // Scroll Animation of Certificates//
-  const [shouldAddAnimation, setShouldAddAnimation] = useState(true);
-
   useEffect(()=> {
-    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    setShouldAddAnimation(!prefersReducedMotion);
-  }, []);
-
-  useEffect(()=> {
-    const addAnimation = () => {
-      const scrollers = document.querySelectorAll(".scroller");
-
-      scrollers.forEach((scroller)=> {
-        if (!scroller.getAttribute("data-animated")) {
-          scroller.setAttribute("data-animated", true);
-
-        const scrollerInner = scroller.querySelector(".scroller__inner");
-        const scrollerContent = Array.from(scrollerInner.children);
-
-        scrollerContent.forEach((item)=> {
-          const duplicatedItem = item.cloneNode(true);
-          duplicatedItem.setAttribute("aria-hidden", true);
-          scrollerInner.appendChild(duplicatedItem);
-      });
-    }
-    });
-  }; 
-  if (shouldAddAnimation) {
-      addAnimation();
-    }
-  },
-  [shouldAddAnimation]);
+    AOS.init({duration: 2000});
+  },[]);
 
   return (
   <div className="main">
 {/* ///////TOP//////////////////////// */}
     <Hero/>
-    <section id="About-main">
+    <section id="About-main" data-aos='fade-up'>
             <div className="About-heading">01. About Me</div>
             <div className="About-text">
               I am a <span>frontend developer</span> based in Nashville, TN transitioning out of 7 years in healthcare. I have always
@@ -53,7 +24,7 @@ const Home = () => {
     </section>
 
   {/* ////////////RESUME///////////////// */}
-  <section id="resume-main">
+  <section id="resume-main" data-aos='fade-up'>
     <div className="resume-heading">02. Experience</div>
     <div className="resume-exp">
       <div id="exps">
@@ -83,7 +54,7 @@ const Home = () => {
 
 {/* //////PROJECTS//////////// */}
 
-    <section id='projects-main'>
+    <section id='projects-main' data-aos='fade-up'>
         <div className="projects-heading">03. Projects</div>
         <div className="project-container">
           <div className='projects'>
@@ -149,7 +120,6 @@ const Home = () => {
             </div>
             <a href="https://vocal-beignet-099224.netlify.app/" target='none'><div className='hello4'></div></a>
             <div className="project-info">
-              <div>Project done with Coding Temple</div>
               <div>HTML/CSS</div>
               <div>Multi-page static representation of a gym website</div>
               <div><a className="project-link" href="https://github.com/klheeJ/gym-webiste">Github</a></div>
