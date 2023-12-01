@@ -13,7 +13,7 @@ const Home = () => {
 {/* ///////TOP//////////////////////// */}
     <Hero/>
     <section id="About-main" data-aos='fade-up'>
-            <div className="About-heading">01. About Me</div>
+            <div className="About-heading"><span id="number">01.</span> About Me</div>
             <div className="About-text">
               I am a <span>frontend developer</span> based in Nashville, TN transitioning out of 7 years in healthcare. I have always
               had a <span>passion for solving problems</span>, whether it be creating art through
@@ -25,7 +25,7 @@ const Home = () => {
 
   {/* ////////////RESUME///////////////// */}
   <section id="resume-main" data-aos='fade-up'>
-    <div className="resume-heading">02. Experience</div>
+    <div className="resume-heading"><span id="number">02.</span> Experience</div>
     <div className="resume-exp">
       <div id="exps">
         <div>Fullstack Software Engineer Intern</div>
@@ -55,7 +55,7 @@ const Home = () => {
 {/* //////PROJECTS//////////// */}
 
     <section id='projects-main' data-aos='fade-up'>
-        <div className="projects-heading">03. Projects</div>
+        <div className="projects-heading"><span id="number">03.</span> Projects</div>
         <div className="project-container">
           <div className='projects'>
             <div>
