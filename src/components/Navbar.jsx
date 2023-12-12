@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/index"
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -27,7 +27,7 @@ function Navbar() {
               {navLinks.map((nav)=> (
                   <li
                   key={nav.id}>
-                    <Link to={nav.id} smooth={true} offset={getOffset} duration={500}>{nav.title}
+                    <Link to={nav.id} smooth={true} offset={getOffset()} duration={500}>{nav.title}
                     </Link>
                   </li>
               ))}
