@@ -103,28 +103,6 @@ const Home = () => {
               <div><a className="project-link" href="https://github.com/klheeJ/foodbar">Github</a></div>
             </div>
           </div>
-          <div className='projects'>
-            <div>
-              <p className="project-title">Chicago Museum of Arts API</p>
-            </div>
-            <a href="https://main--spectacular-moxie-623ab5.netlify.app/" target='none'><div className='hello2'></div></a>
-            <div className="project-info">
-              <div>JS/HTML/CSS</div>
-              <div>Utilizes an API to showcase selected art pieces from the Chicago Museum of Art</div>
-              <div><a className="project-link" href="https://github.com/klheeJ/Javascript_ChicagoArt_API">Github</a></div>
-            </div>
-          </div>
-          <div className='projects'>
-            <div>
-              <p className="project-title">Otter Gym</p>
-            </div>
-            <a href="https://vocal-beignet-099224.netlify.app/" target='none'><div className='hello4'></div></a>
-            <div className="project-info">
-              <div>HTML/CSS</div>
-              <div>Multi-page static representation of a gym website</div>
-              <div><a className="project-link" href="https://github.com/klheeJ/gym-webiste">Github</a></div>
-            </div>
-          </div>
         </div>
     </section>
 
