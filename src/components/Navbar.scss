@@ -98,6 +98,9 @@ nav {
                 padding-right: 2rem;
                 font-size: 2rem;
                 position: absolute;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .bar.hidden, .close.hidden {
                 visibility: hidden;
@@ -105,6 +108,9 @@ nav {
             .close {
                 padding-right: 2rem;
                 font-size: 2rem;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .close.hidden {
                 visibility: hidden;
@@ -115,7 +121,7 @@ nav {
         visibility: visible;
         opacity: 1;
         margin-top: 3rem;
-        max-height: 0;
+        height: 0;
         width: 85%;
         overflow: hidden;
         display: flex;
@@ -126,11 +132,11 @@ nav {
         list-style: none;
         row-gap: 5px;
         font-family: 'Inconsolata', monospace;
-        transition: max-height 0.5s ease-in;
+        transition: height 0.5s ease-in;
     }
     .toggle-menu.open {
-        margin-top: 4rem;
-        max-height: 10rem;
+        margin-top: 3rem;
+        height: 10rem;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -139,6 +145,6 @@ nav {
         list-style: none;
         row-gap: 5px;
         font-family: 'Inconsolata', monospace;
-        transition: max-height 0.5s ease-in;
+        transition: height 0.5s ease-in;
     }
 }

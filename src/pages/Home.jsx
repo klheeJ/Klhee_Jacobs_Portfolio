@@ -12,9 +12,9 @@ const Home = () => {
   <div className="main">
 {/* ///////TOP//////////////////////// */}
     <Hero/>
-    <section id="About-main" data-aos='fade-up'>
-            <div className="About-heading"><span id="number">01.</span> About Me</div>
-            <div className="About-text">
+    <section id="About-main">
+            <div className="About-heading" data-aos='fade-up'><span id="number">01.</span> About Me</div>
+            <div className="About-text" data-aos='fade-up'>
               I am a <span>frontend developer</span> based in Nashville, TN transitioning out of 7 years in healthcare. I have always
               had a <span>passion for solving problems</span>, whether it be creating art through
               different mediums, attempting a logic-based puzzle or figuring out different strategies
@@ -26,7 +26,7 @@ const Home = () => {
   {/* ////////////RESUME///////////////// */}
   <section id="resume-main" data-aos='fade-up'>
     <div className="resume-heading"><span id="number">02.</span> Experience</div>
-    <div className="resume-exp">
+    <div className="resume-exp" data-aos='fade-up'>
       <div id="exps">
         <div>Fullstack Software Engineer Intern</div>
         <div>Sept 2023 - Current</div>
@@ -54,9 +54,9 @@ const Home = () => {
 
 {/* //////PROJECTS//////////// */}
 
-    <section id='projects-main' data-aos='fade-up'>
-        <div className="projects-heading"><span id="number">03.</span> Projects</div>
-        <div className="project-container">
+    <section id='projects-main'>
+        <div className="projects-heading" data-aos='fade-up'><span id="number">03.</span> Projects</div>
+        <div className="project-container" data-aos='fade-up'>
           <div className='projects'>
             <div>
               <p className="project-title">Scholarship Auditions</p>
