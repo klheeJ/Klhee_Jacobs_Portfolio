@@ -24,8 +24,8 @@ const Home = () => {
     </section>
 
   {/* ////////////RESUME///////////////// */}
-  <section id="resume-main" data-aos='fade-up'>
-    <div className="resume-heading"><span id="number">02.</span> Experience</div>
+  <section id="resume-main">
+    <div className="resume-heading" data-aos='fade-up'><span id="number">02.</span> Experience</div>
     <div className="resume-exp" data-aos='fade-up'>
       <div id="exps">
         <div>Fullstack Software Engineer Intern</div>
@@ -61,7 +61,7 @@ const Home = () => {
             <div>
               <p className="project-title">Scholarship Auditions</p>
             </div>
-            <a href="http://www.scholarshipaudition.com/home" target='none'><div className='hello'></div></a>
+            <a href="http://www.scholarshipaudition.com/home" target='none'><div className='project-1'></div></a>
             <div className="project-info">
               <div>Node.js/HTML/CSS</div>
               <div>Built from ground up in a team of one graphic designer and two developers</div>
@@ -73,7 +73,7 @@ const Home = () => {
             <div>
               <p className="project-title">My Music Future</p>
             </div>
-            <a href="https://www.mymusicfuture.com/" target='none'><div className='hello5'></div></a>
+            <a href="https://www.mymusicfuture.com/" target='none'><div className='project-2'></div></a>
             <div className="project-info">
               <div>Angular/HTML/CSS</div>
               <div>Contributed to updates and changes on an existing project</div>
@@ -84,7 +84,7 @@ const Home = () => {
             <div>
               <p className="project-title">My Music Future</p>
             </div>
-            <a href="https://www.musiccitybowlband.com/" target='none'><div className='hello6'></div></a>
+            <a href="https://www.musiccitybowlband.com/" target='none'><div className='project-3'></div></a>
             <div className="project-info">
               <div>Angular/HTML/CSS</div>
               <div>Contributed to updates and changes on an existing project</div>
@@ -95,7 +95,7 @@ const Home = () => {
             <div>
               <p className="project-title">Foodbar (in progress)</p>
             </div>
-            <a href="https://main--curious-halva-0315d4.netlify.app/" target='none'><div className='hello3'></div></a>
+            <a href="https://main--curious-halva-0315d4.netlify.app/" target='none'><div className='project-4'></div></a>
             <div className="project-info">
               <div>Self-project recreating a template website</div>
               <div>React/Typescript/HTML/SCSS</div>
