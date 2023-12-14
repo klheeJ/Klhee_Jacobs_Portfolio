@@ -82,7 +82,7 @@ const Home = () => {
           </div>
           <div className='projects'>
             <div>
-              <p className="project-title">My Music Future</p>
+              <p className="project-title">Music City Bowl Band</p>
             </div>
             <a href="https://www.musiccitybowlband.com/" target='none'><div className='project-3'></div></a>
             <div className="project-info">
