@@ -44,37 +44,25 @@
     margin-top: 1rem;
 }
 
-.hello {
+.project-1 {
     @include project-styles;
     background-image: url('../../public/scholarshipauditions.png');
     width: 80%;
 }
 
-.hello2 {
-    @include project-styles;
-    background-image: url('../../public/CAPI.png');
-    width: 80%;
-}
-
-.hello3 {
+.project-4 {
     @include project-styles;
     background-image: url('../../public/Foodbar.png');
     width: 80%;
 }
 
-.hello4 {
-    @include project-styles;
-    background-image: url('../../public/Otter.png');
-    width: 80%;
-}
-
-.hello5 {
+.project-2 {
     @include project-styles;
     background-image: url('../../public/mymusicfuture.png');
     width: 80%;
 }
 
-.hello6 {
+.project-3 {
     @include project-styles;
     background-image: url('../../public/musiccitybowlband.png');
     width: 80%;
