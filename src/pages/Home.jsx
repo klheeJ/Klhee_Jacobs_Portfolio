@@ -49,7 +49,7 @@ const Home = () => {
       </div>
     </div>
   </section>
-  <div className="resume-link"><a href="https://drive.google.com/file/d/1FI-Gd93If5oKGT4x6LhrTb0a6sny-u_Y/view?usp=sharing" target="blank">download the complete resume</a></div>
+  <div className="resume-link"><a href="https://drive.google.com/file/d/11E4v43yoUMJuEyLcwF5Q4sgqHfa-0lkY/view?usp=sharing" target="blank">download the complete resume</a></div>
 
 
 {/* //////PROJECTS//////////// */}
