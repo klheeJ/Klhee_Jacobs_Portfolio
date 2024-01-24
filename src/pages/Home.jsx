@@ -49,7 +49,7 @@ const Home = () => {
       </div>
     </div>
   </section>
-  <div className="resume-link"><a href="https://drive.google.com/file/d/11E4v43yoUMJuEyLcwF5Q4sgqHfa-0lkY/view?usp=sharing" target="blank">download the complete resume</a></div>
+  <div className="resume-link"><a href="https://drive.google.com/file/d/1_3RDYKaB460dfsedzxlxYDmlG-Jg_Zt5/view?usp=sharing" target="blank">download the complete resume</a></div>
 
 
 {/* //////PROJECTS//////////// */}
@@ -59,6 +59,18 @@ const Home = () => {
         <div className="project-container" data-aos='fade-up'>
           <div className='projects'>
             <div>
+              <p className="project-title">Doumi (in progress)</p>
+            </div>
+            <div className='project-5'></div>
+            <div className="project-info">
+              <div>TypeScript/React Native/Expo/Firebase/Firestore</div>
+              <div>Created a social app from conception to completion in a cross-functional team of 4.</div>
+              <div>An android social app that connects caregivers of dementia patients for community by being able to share insights and thoughts and provides support with caregiving strategies.</div>
+              <div><a className="project-link" href="https://github.com/Gouldy-C/CoLab25-Caretaker-App">Github</a></div>
+            </div>
+          </div>
+          <div className='projects'>
+            <div>
               <p className="project-title">Scholarship Auditions</p>
             </div>
             <a href="http://www.scholarshipaudition.com/home" target='none'><div className='project-1'></div></a>
@@ -66,7 +78,7 @@ const Home = () => {
               <div>Node.js/HTML/CSS</div>
               <div>Built from ground up in a team of one graphic designer and two developers</div>
               <div>Informational site on the different services ScholarshipAuditions provides</div>
-              <div><a className="project-link" href="https://github.com/lcluischavez/SA">Github</a></div>
+              <div><a className="project-link" href="https://github.com/klheeJ/ScholarshipAuditions">Github</a></div>
             </div>
           </div>
           <div className='projects'>
