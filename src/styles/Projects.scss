@@ -68,11 +68,7 @@
     width: 80%;
 }
 
-.project-5 {
-    @include project-styles;
-    background-image: url('../../public/doumi.png');
-    width: 80%;
-}
+
 
 @media only screen and (max-width: 750px) { 
     #projects-main {

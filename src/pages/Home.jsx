@@ -59,14 +59,15 @@ const Home = () => {
         <div className="project-container" data-aos='fade-up'>
           <div className='projects'>
             <div>
-              <p className="project-title">Doumi (in progress)</p>
+              <p className="project-title">Doumi</p>
             </div>
             <div className='project-5'></div>
             <div className="project-info">
-              <div>TypeScript/React Native/Expo/Firebase/Firestore</div>
-              <div>Created a social app from conception to completion in a cross-functional team of 4.</div>
+              <iframe src="https://drive.google.com/file/d/15ZbmFJCErcFSsIfl6BMnfgXI6uEVnB4g/preview" width="600" height="400" allow="autoplay"></iframe>
+              <div>React Native/Expo/Firebase/Firestore</div>
+              <div>Created a social app from conception to completion in 3 weeks in a cross-functional team of 4, consisting of a product manager, product designer, and web developers.</div>
               <div>An android social app that connects caregivers of dementia patients for community by being able to share insights and thoughts and provides support with caregiving strategies.</div>
-              <div><a className="project-link" href="https://github.com/Gouldy-C/CoLab25-Caretaker-App">Github</a></div>
+              <div><a className="project-link" href="https://github.com/klheeJ/doumi">Github</a></div>
             </div>
           </div>
           <div className='projects'>
