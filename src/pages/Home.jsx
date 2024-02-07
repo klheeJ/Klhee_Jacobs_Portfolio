@@ -10,12 +10,11 @@ const Home = () => {
 
   return (
   <div className="main">
-{/* ///////TOP//////////////////////// */}
     <Hero/>
     <section id="About-main">
             <div className="About-heading" data-aos='fade-up'><span id="number">01.</span> About Me</div>
             <div className="About-text" data-aos='fade-up'>
-              I am a <span>frontend developer</span> based in Nashville, TN transitioning out of 7 years in healthcare. I have always
+              I am a <span>full-stack developer</span> based in Nashville, TN transitioning out of 7 years in healthcare. I have always
               had a <span>passion for solving problems</span>, whether it be creating art through
               different mediums, attempting a logic-based puzzle or figuring out different strategies
               for a particular boardgame. Web development allows me to combine both parts of my brain that seek creative problem-solving with style
@@ -23,39 +22,49 @@ const Home = () => {
             </div>
     </section>
 
-  {/* ////////////RESUME///////////////// */}
   <section id="resume-main">
     <div className="resume-heading" data-aos='fade-up'><span id="number">02.</span> Experience</div>
     <div className="resume-exp" data-aos='fade-up'>
       <div id="exps">
-        <div>Fullstack Software Engineer Intern</div>
-        <div>Sept 2023 - Current</div>
+        <li>Full-stack Software Engineer Intern (co.lab)</li>
+        <div className="dates">Dec 2023 - Feb 2024</div>
       </div>
       <div id="exps">
-        <div>Fullstack Software Engineer Student</div>
-        <div>Dec 2022 - May 2023</div>
+        <li>Full-stack Software Engineer Intern (ScholarshipAuditions.com)</li>
+        <div className="dates">Sept 2023 - Dec 2023</div>
       </div>
       <div id="exps">
-        <div>Family Nurse Practitioner</div>
-        <div>2016 - Current</div>
-      </div>
-      <div id="exps">
-        <div>Vanderbilt University</div>
-        <div>Bachelor of Science</div>
-      </div>
-      <div id="exps">
-      <div>Vanderbilt University School of Nursing</div>
-        <div>Masters of Science in Nursing</div>
+        <li>Family Nurse Practitioner</li>
+        <div className="dates">2016 - Current</div>
       </div>
     </div>
   </section>
-  <div className="resume-link"><a href="https://drive.google.com/file/d/1_3RDYKaB460dfsedzxlxYDmlG-Jg_Zt5/view?usp=sharing" target="blank">download the complete resume</a></div>
+
+  <section id="education-main">
+    <div className="resume-heading" data-aos='fade-up'><span id="number">03.</span> Education</div>
+    <div className="resume-exp" data-aos='fade-up'>
+      <div id="exps">
+        <li>Full-stack Software Engineer Student</li>
+        <div className="dates">Dec 2022 - May 2023</div>
+      </div>
+      <div id="exps">
+        <li>Vanderbilt University</li>
+        <div className="school">Bachelor of Science</div>
+      </div>
+      <div id="exps">
+        <li>Vanderbilt University School of Nursing</li>
+        <div className="school">Masters of Science in Nursing</div>
+      </div>
+    </div>
+  </section>
+
+  <div className="resume-link"><a href="https://drive.google.com/file/d/1mK0QWEBl2PcVlIrMJzqNk37Fskw5zW7m/view?usp=sharing" target="blank">download the complete resume</a></div>
 
 
 {/* //////PROJECTS//////////// */}
 
     <section id='projects-main'>
-        <div className="projects-heading" data-aos='fade-up'><span id="number">03.</span> Projects</div>
+        <div className="projects-heading" data-aos='fade-up'><span id="number">04.</span> Projects</div>
         <div className="project-container" data-aos='fade-up'>
           <div className='projects'>
             <div>
@@ -63,7 +72,7 @@ const Home = () => {
             </div>
             <div className='project-5'></div>
             <div className="project-info">
-              <iframe src="https://drive.google.com/file/d/15ZbmFJCErcFSsIfl6BMnfgXI6uEVnB4g/preview" width="600" height="400" allow="autoplay"></iframe>
+              <iframe className="iframe" src="https://drive.google.com/file/d/15ZbmFJCErcFSsIfl6BMnfgXI6uEVnB4g/preview" width="600" height="400" allow="autoplay"></iframe>
               <div>React Native/Expo/Firebase/Firestore</div>
               <div>Created a social app from conception to completion in 3 weeks in a cross-functional team of 4, consisting of a product manager, product designer, and web developers.</div>
               <div>An android social app that connects caregivers of dementia patients for community by being able to share insights and thoughts and provides support with caregiving strategies.</div>

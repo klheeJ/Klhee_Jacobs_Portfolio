@@ -1,4 +1,4 @@
-#resume-main {
+#resume-main, #education-main {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14,14 +14,20 @@
     }
     .resume-exp {
         padding: 1rem 1rem 3rem 1rem;
-        text-align: justify;
         font-size: 1.3rem;
         line-height: 2.5rem;
         width: 50rem;
         height: 100%;
         #exps {
-            display: flex;
-            justify-content: space-between;
+            li {
+                display: flex;
+                justify-content: flex-start;
+                color: rgb(233, 108, 50);
+            }
+            .dates, .school {
+                font-size: 1rem;
+                opacity: 0.8;
+            }
         }
     }
 }
@@ -31,18 +37,20 @@
     font-size: 1.3rem;
     margin-bottom: 5rem;
     margin-right: 7rem;
-    font-style: italic;
-    box-shadow: 1px 1px 1px grey;
+    font-weight: bold;
     padding: 2px;
     padding-right: 4px;
-    &:hover {
-        font-weight: bold;
+    a {
+        color: rgb(99, 157, 237);
+    }
+    a:hover {
+        color: rgb(53, 56, 225);
     }
 }
 
 
 @media only screen and (max-width: 750px) { 
-    #resume-main {
+    #resume-main, #education-main {
         @include mobile-main;
         .resume-heading {
             @include mobile-head;
@@ -55,11 +63,14 @@
             width: calc(100% - 2rem*2);
             height: 100%;
             #exps {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                div:first-child {
-                    font-weight: bold;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    color: rgb(233, 108, 50);
+                }
+                .dates, .school {
+                    font-size: 1rem;
+                    opacity: 0.8;
                 }
             }
         }

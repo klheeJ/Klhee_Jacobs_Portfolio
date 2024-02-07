@@ -27,6 +27,7 @@
                 font-size: 1.6rem;
                 font-weight: bold;
                 margin-bottom: 1rem;
+                padding-left: 1rem;
                 background-color: rgba(251, 234, 173, 0.441);
             }
             .project-link {
@@ -116,4 +117,11 @@
         background-repeat: no-repeat;
         transition: none;
     }
+
+    .iframe {
+        width: 100%;
+        max-width: 600px; 
+        height: 400px;
+        margin: 0 auto; 
+      }
 };
