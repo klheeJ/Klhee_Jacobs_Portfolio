@@ -37,14 +37,15 @@
     font-size: 1.3rem;
     margin-bottom: 5rem;
     margin-right: 7rem;
-    font-weight: bold;
-    padding: 2px;
+    padding-top: 2rem;
     padding-right: 4px;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: underline;
     a {
-        color: rgb(99, 157, 237);
+        align-self: self-start;
     }
     a:hover {
-        color: rgb(53, 56, 225);
+        color: rgb(81, 81, 85);
     }
 }
 

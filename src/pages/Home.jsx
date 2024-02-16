@@ -55,10 +55,11 @@ const Home = () => {
         <li>Vanderbilt University School of Nursing</li>
         <div className="school">Masters of Science in Nursing</div>
       </div>
+      <div className="resume-link"><a href="https://drive.google.com/file/d/1mK0QWEBl2PcVlIrMJzqNk37Fskw5zW7m/view?usp=sharing" target="blank">download the complete resume</a></div>
     </div>
   </section>
 
-  <div className="resume-link"><a href="https://drive.google.com/file/d/1mK0QWEBl2PcVlIrMJzqNk37Fskw5zW7m/view?usp=sharing" target="blank">download the complete resume</a></div>
+
 
 
 {/* //////PROJECTS//////////// */}
